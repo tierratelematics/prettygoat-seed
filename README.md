@@ -31,6 +31,13 @@ To trigger the ingestion of new events you can edit events/bank.js. Try to add t
 ```
 
 You can then refresh your browser and see that the new account has appeared.
+
+## Event store
+
+This seed is configured to read the events from the filesystem. For production usage this is not really ideal, so have a look at [cassandra-store](https://github.com/tierratelematics/prettygoat-cassandra-store) for a production-ready database.
+
+## Frontend
+
 If you're looking for a frontend that automatically updates your views when something changes on a projections, have a look at [ninjagoat](https://github.com/tierratelematics/ninjagoat-seed).
 
 ## License
