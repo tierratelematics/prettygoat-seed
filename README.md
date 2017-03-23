@@ -1,7 +1,7 @@
 # Prettygoat-seed
 
 This is the starting point in a [prettygoat](https://github.com/tierratelematics/prettygoat)-powered application.
-By following this simple steps you'll have an engine running some projections of a fake bank context.
+By following these simple steps you'll have an engine running some projections of a fake bank context.
 
 ## Installation
 
