@@ -1,7 +1,7 @@
 import {IProjectionDefinition, CountSnapshotStrategy, Projection, IProjection} from "prettygoat";
 import {AccountCreated, AccountDeleted, Account} from "../TypeDefinitions";
 
-@Projection("Accounts")
+@Projection("Detail")
 export default class AccountsProjection implements IProjectionDefinition<Account> {
 
     define(): IProjection<Account> {

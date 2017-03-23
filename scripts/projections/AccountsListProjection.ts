@@ -12,8 +12,7 @@ export default class AccountsListProjection implements IProjectionDefinition<Acc
                 "io.bank.AccountCreated": (state: Account[], event: AccountCreated) => {
                     state.push({
                         id: event.id,
-                        name: event.name,
-                        status: "ACTIVE"
+                        name: event.name
                     });
                     return state;
                 }

@@ -11,5 +11,5 @@ export type AccountDeleted = {
 export type Account = {
     id: string;
     name: string;
-    status: "ACTIVE" | "DELETED"
+    status?: "ACTIVE" | "DELETED"
 };
