@@ -1,10 +1,8 @@
 import {TestEnvironment, ITestRunner} from "prettygoat-testing";
-import {AccountsProjection} from "../scripts/ProjectionsDefinitions";
-import expect =  require("expect.js");
+import expect = require("expect.js");
+import AccountsProjection from "../scripts/projections/AccountsProjection";
 
-
-
-describe("Account lifecycle", () => {
+describe("Given an AccountsProjection", () => {
 
     let environment: TestEnvironment;
     let runner: ITestRunner<any>;
@@ -18,11 +16,8 @@ describe("Account lifecycle", () => {
         runner = environment.runner();
     });
 
-
-    context("when an Account is created", () => {
-
-        it("should set the status to ACTIVE", async () => {
-
+    context("when an account is created", () => {
+        it("should set the status to active", async() => {
             let accountId = "3079581A-8526-4903-8D8F-B8AC57DDF47D";
             let accountName = "Fineco";
 
@@ -33,13 +28,23 @@ describe("Account lifecycle", () => {
                         id: accountId,
                         name: accountName
                     },
-                    timestamp: new Date(1),
+                    timestamp: new Date(2),
+                    splitKey: null
+                },
+                {
+                    type: "io.bank.AccountDeleted",
+                    payload: {
+                        id: accountId,
+                    },
+                    timestamp: new Date(3),
                     splitKey: null
                 }
             ];
 
+
             let state = await runner
                 .of(AccountsProjection)
+                .stopAt(new Date(2))
                 .fromEvents(events)
                 .run();
 
@@ -51,10 +56,8 @@ describe("Account lifecycle", () => {
 
     });
 
-    context("when an Account is deleted", () => {
-
-        it("should set the status to DELETED", async () => {
-
+    context("when an account is deleted", () => {
+        it("should set the status to deleted", async() => {
             let accountId = "3079581A-8526-4903-8D8F-B8AC57DDF47D";
             let accountName = "Fineco";
 

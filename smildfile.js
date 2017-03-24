@@ -1,3 +1,6 @@
 module.exports = {
-    "projectType": "nodejs"
+    "projectType": "nodejs",
+    "nodemon": {
+        "ignore": ["events/**/*"]
+    }
 };

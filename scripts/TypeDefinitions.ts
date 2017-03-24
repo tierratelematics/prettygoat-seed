@@ -8,8 +8,8 @@ export type AccountDeleted = {
     name: string
 }
 
-export type Accounts = {
+export type Account = {
     id: string;
     name: string;
-    status: "ACTIVE" | "DELETED"
-}
+    status?: "ACTIVE" | "DELETED"
+};
