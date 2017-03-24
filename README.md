@@ -26,7 +26,7 @@ To trigger the ingestion of new events you can edit events/bank.js. Try to add t
         id: "8340948HSHS-8483J",
         name: "Unicredit"
     },
-    timestamp: new Date(2)
+    timestamp: new Date(4)
 }
 ```
 
