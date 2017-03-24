@@ -1,6 +1,6 @@
 {
   "name": "prettygoat-seed",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "devDependencies": {
     "@types/expect.js": "~0.3.29",
     "@types/mocha": "~2.2.39",
@@ -9,8 +9,8 @@
   },
   "dependencies": {
     "@types/node": "~7.0.5",
-    "prettygoat": "~2.0.0",
-    "prettygoat-file-store": "~1.0.0",
-    "prettygoat-testing": "~0.3.0"
+    "prettygoat": "^2.0.0",
+    "prettygoat-file-store": "^1.0.0",
+    "prettygoat-testing": "^0.3.0"
   }
 }
