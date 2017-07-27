@@ -1,6 +1,7 @@
+import "reflect-metadata";
 import {TestEnvironment, ITestRunner} from "prettygoat-testing";
 import expect = require("expect.js");
-import AccountsProjection from "../scripts/projections/AccountsProjection";
+import {AccountsProjection} from "../scripts/AccountsProjection";
 
 describe("Given an AccountsProjection", () => {
 
