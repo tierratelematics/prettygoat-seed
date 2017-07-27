@@ -1,3 +1,4 @@
+import "reflect-metadata";
 import {Engine} from "prettygoat";
 import {FileModule} from "prettygoat-file-store";
 import BankModule from "./scripts/BankModule";

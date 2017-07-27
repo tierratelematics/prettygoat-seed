@@ -7,8 +7,7 @@ import {
     INotificationConfig
 } from "prettygoat";
 import {interfaces} from "inversify";
-import AccountsProjection from "./projections/AccountsProjection";
-import AccountsListProjection from "./projections/AccountsListProjection";
+import {AccountsProjection} from "./AccountsProjection";
 
 class BankModule implements IModule {
 
@@ -26,10 +25,7 @@ class BankModule implements IModule {
     };
 
     register(registry: IProjectionRegistry, serviceLocator?: IServiceLocator, overrides?: any): void {
-        registry
-            .add(AccountsListProjection)
-            .add(AccountsProjection, parameters => parameters.id)
-            .forArea("Accounts");
+        registry.add(AccountsProjection).forArea("Accounts");
     }
 }
 

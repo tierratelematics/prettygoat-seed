@@ -3,12 +3,15 @@
     "target": "es5",
     "lib": [
       "es5",
-      "es6"
+      "es6",
+      "dom"
     ],
     "experimentalDecorators": true,
-    "emitDecoratorMetadata": true
-  },
-  "include": [
-    "node_modules/rx/ts/rx.all.d.ts"
-  ]
+    "emitDecoratorMetadata": true,
+    "baseUrl": ".",
+    "paths": {
+      "rxjs": ["../prettygoat/node_modules/rxjs", "./node_modules/rxjs"],
+      "rxjs/*": ["../prettygoat/node_modules/rxjs/*", "./node_modules/rxjs/*"]
+    }
+  }
 }
