@@ -64,7 +64,7 @@ class ListDeliver implements IDeliverStrategy<Dictionary<Account>, Account[]> {
 class DetailDeliver implements IDeliverStrategy<Dictionary<Account>, Account> {
 
     deliver(state: Dictionary<Account>, context: DeliverContext, readModels?: Dictionary<any>): DeliverResult<Account> {
-        return [state[context.params.modelKey], DeliverAuthorization.CONTENT];
+        return [state[context.params.id], DeliverAuthorization.CONTENT];
     }
 
 }
