@@ -38,7 +38,7 @@ This seed is configured to read the events from the filesystem. For production u
 
 ## Frontend
 
-If you're looking for a frontend that automatically updates your views when something changes on a projections, have a look at [ninjagoat](https://github.com/tierratelematics/ninjagoat-seed).
+If you're looking for a frontend that automatically updates your views when something changes on a projection, have a look at [ninjagoat](https://github.com/tierratelematics/ninjagoat-seed).
 
 ## License
 
