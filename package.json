@@ -10,6 +10,7 @@
   "dependencies": {
     "@types/lodash": "~4.14.71",
     "@types/node": "~7.0.5",
+    "@types/socket.io": "~1.4.30",
     "inversify": "~4.3.0",
     "lodash": "~4.17.4",
     "prettygoat": "^4.0.0-3",
