@@ -1,21 +1,21 @@
 {
   "name": "prettygoat-seed",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "devDependencies": {
     "@types/expect.js": "~0.3.29",
-    "@types/mocha": "~2.2.39",
+    "@types/mocha": "~2.2.43",
     "expect.js": "~0.3.1",
     "typemoq": "~1.4.0"
   },
   "dependencies": {
-    "@types/lodash": "~4.14.71",
+    "@types/lodash": "~4.14.77",
     "@types/node": "~7.0.5",
-    "@types/socket.io": "~1.4.30",
+    "@types/socket.io": "~1.4.31",
     "inversify": "~4.3.0",
     "lodash": "~4.17.4",
-    "prettygoat": "^4.0.0-3",
-    "prettygoat-file-store": "^2.0.0-0",
-    "prettygoat-testing": "^2.0.0-1",
+    "prettygoat": "~5.0.2",
+    "prettygoat-file-store": "~3.0.0",
+    "prettygoat-testing": "~3.0.0",
     "reflect-metadata": "~0.1.8"
   }
 }
