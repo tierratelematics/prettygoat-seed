@@ -11,11 +11,11 @@
     "@types/lodash": "~4.14.77",
     "@types/node": "~7.0.5",
     "@types/socket.io": "~1.4.31",
-    "inversify": "~4.3.0",
+    "inversify": "^4.9.0",
     "lodash": "~4.17.4",
-    "prettygoat": "~5.0.2",
-    "prettygoat-file-store": "~3.0.0",
-    "prettygoat-testing": "~3.0.0",
+    "prettygoat": "^6.1.1",
+    "prettygoat-file-store": "^3.1.0",
+    "prettygoat-testing": "^3.1.0",
     "reflect-metadata": "~0.1.8"
   }
 }
